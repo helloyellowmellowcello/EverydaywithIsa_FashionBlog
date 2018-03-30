@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Everyday with Isa | A New York City Fashion Blog</title>
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+    <link href="https://github.com/necolas/normalize.css/" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Gilda+Display|Open+Sans|Pragati+Narrow" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(black 18%,#81A162 50%,#81A162, black);
+        }
+        header {
+            background: url('img/NY_City.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            padding: 0px;
+            border: 0px;
+            margin: 0px;
+        }
+        a {
+            color: white;
+        }
+        a img {
+            outline : none;
+        }
+        nav ul {
+            padding: 10px;
+            background: rgba(0,0,0,0.5);
+        }
+        nav li {
+            display: inline;
+            padding: 0px 10px 0px 10px;
+            font-size: 30px
+        }
+        h1 {
+            font-size: 70px;
+            color: white;
+        }
+        article {
+            max-width: 500px;
+            padding: 20px;
+            margin: 0 auto;
+            background: linear-gradient(#151B11,#81A162 30%,#81A162, #445433 98%);
+        }
+        h2 {
+            font-size: 30px;
+        }
+        img {
+            border: 5px solid white;
+            border-radius: 20px;
+        }
+        img.profile {
+            margin: 40px 0px 0px 0px;
+        }
+        img.float-right {
+            float: right;
+            /* Add some space to the left of the image */
+            margin-left: 15px;
+        }
+        img.float-left {
+            float: left;
+            /* Add some space to the right of the image */
+            margin-right: 15px;
+        }
+        /*  Override the top margin to the floated imgs  */
+        .float-right,
+        .float-left {
+            margin-top: 0px;
+        }
+        img.no-border-radius {
+            border: 0px;
+            border-radius: 0px;
+        }
+        /* Add some space between the top of the paragraph */
+        p.increase-Padding {
+            padding-top: 5px;
+        }
+        span {
+            float: left;
+            width: 0.7em;
+            font-size: 400%;
+            font-family: algerian, courier;
+            line-height: 80%;
+        }
+        button {
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            background: transparent;
+            transition: 0.3s;
+        }
+        button:hover {
+            cursor: pointer;
+        }
+        .liked-button {
+            display: none;
+            transition: 5s;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            border: none;
+        }
+        .alternating-image {
+            display: block;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            /** Set the background image **/
+            background: url(img/heartlike_unlike.png) no-repeat;
+            /** Scale the size of the image being used **/
+            background-size: contain;
+            /** Need to set the width of the container **/
+            width: 25px;
+            height: 25px;
+            /** Remove the default border for buttons **/
+            border: none;
+            padding:0;
+            }
+        .alternating-image:hover {
+            background: url(img/heartlike_hover.png) no-repeat;
+            background-size: contain;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding:0;
+        }
+        div.related_content{
+            background: linear-gradient(#3B4B2D, #11160D);
+            color: white;
+        }
+        footer.contact {
+            text-align: center;
+            color: white;
+            background: linear-gradient(171C11, rgba(9,11,7,0.5);)
+        }
+        @media (max-width: 500px) {
+            h1 {
+                font-size: 36px;
+                padding: 5px;
+            }
+            li {
+                padding: 5px;
+                display: block;
+            }
+        }
+  </style>
+</head>
+
+<body>
+    <header>
+        <a href='#contact'><img class="profile" src="img/profilepic.jpg" alt="Isabelle Rodriguez"></a>
+        <h3>fashionista | influencer | bitch, please.</h3>
+        <h1>|  Everyday with Isa  |</h1>
+        <nav>
+            <ul>
+      		    <li><a href="#">About Me</a></li>
+      		    <li><a href="#tickets">Tickets</a></li>
+      		    <li><a href="#dressing">Dressing</a></li>
+    		</ul>
+        </nav>
+    </header>
+        <article>
+            <h1>An Insider's Guide to NYFW</h1>
+            <h3>by Isabelle Rodriguez | 1 day ago</h3>
+            <img src="img/image-one.jpeg" alt="Lady in T-shirt and jeans with shopping bags hanging from her arms">
+            <p>
+                <a href="https://en.wikipedia.org/wiki/New_York_Fashion_Week" target="_blank"><span>N</span>YFW</a> can be both amazingly fun &amp; incredibly overwhelming, especially if you've never been there before. Luckily, I'm here to give you an insider's guide and make your first show a pleasurable experience. By taking my tips and tricks, and following your gut, you'll have an unforgettable experience!
+            </p>
+      <br />
+            <div id="tickets">
+            <!-- Use &amp; to add ampersand symbols   -->
+                <h2>Getting Tickets &amp; Picking the Shows</h2>
+                <!-- Image floats to the left  -->
+                <img class="float-left" src="img/image-two.jpeg" alt="Mid-riff of a lady in blak blazer and rose pink silk jumper">
+                <p class="increase-Padding">
+                    <span>I</span>f you're lucky or connected you can get an invite - sans the price tag. But I wasn't so lucky or connected my first 2 years so I'm here to help you out. <br /><br />First, plan out which shows are most important to you and make a schedule. And this is a biggie: SET A BUDGET. If you're worrying about blowing your cash the whole time you won't have fun. Then check out prices, days, and times and prioritize the designers you want to see most. Lastly, purchase your tickets and get excited!
+                </p>
+            </div>
+      <br />
+            <div id="dressing">
+                <h2>Dressing for the Shows</h2>
+                <!-- Image floats to the right, also don't forget to include alt attributes  -->
+                <img class= "float-right" src="img/image-three.jpeg" alt="Well-dressed black male fashionista stndingoutside a building window">
+                <p class="increase-Padding">
+                    <span>A</span>lways be true to your own sense of style. If you don't, you'll be uncomfortable the whole time and it will show. Remember, NYFW is about expressing yourself and taking in what the designers have chosen to express through their new lines. <br /><br />Also, it's important to wear shoes you'll be comfortable in all day. Obviously, you want to look good, but you'll be on your feet all day long, so do be prepared.
+                </p>
+            </div>
+        <br />
+            <button class="alternating-image">
+                <!--  Add the heart-filled image here and add a class so you can set it's display property to none   -->
+                <img class="no-border-radius liked-button"  src="img/heartlike_liked.png" width="25" height="25">
+            </button>
+        </article>
+        <br />
+
+        <div id="related_content" class="related_content">
+            <h4>Related Content</h4>
+            <ul>
+                <li>How to Style Boyfriend Jeans</li><br/>
+                <li>When Print is Too Much</li><br/>
+                <li>The Overalls Trend</li><br/>
+                <li>Fall's It Color: Blush</li>
+            </ul>
+        </div>
+            <br />
+        <footer class="contact">
+            <p><strong>email:</strong> <a href="mailto:isa@fashionblog.com">isa@fashionblog.com</a> | <strong>phone:</strong> 917-555-1098 | <strong>address:</strong> 371 284th St, New York, NY, 10001
+            </p>
+    </footer>
+</body>
+
+<script>
+    jQuery(document).ready(function(){
+        var isALike = false;
+        jQuery("button").click(function() {
+            isALike = !isALike;
+            if (isALike) {
+                alert("Thank you for the like!")
+            }
+            jQuery('img',this).toggle();
+        });
+    });
+</script>
+
+</html>
