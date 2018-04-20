@@ -1,4 +1,4 @@
-# EverydaywithIsa_FashionBlog
+# "Everyday with Isa" : Fashion Blog
 <strong>Description</strong><br />
 For coding help with my Codecademy UI project
 
